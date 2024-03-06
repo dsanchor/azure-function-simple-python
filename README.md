@@ -66,4 +66,6 @@ az functionapp deployment source config-zip --resource-group $RG --name $FUNCAPP
 
 ### Test the function
 
+```bash
 curl https://$FUNCAPP.azurewebsites.net/api/http_trigger?name=Azure
+```
