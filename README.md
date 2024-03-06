@@ -41,7 +41,7 @@ az storage account create --name $SA --location $LOCATION --resource-group $RG -
 az functionapp create --resource-group $RG --consumption-plan-location $LOCATION --runtime python --runtime-version 3.8 --functions-version 4 --name $FUNCAPP --os-type linux --storage-account $SA
 ```
 
-### Build function and publish to Azure
+### Publish function to Azure
 
 - Navigate to the function app directory
 
