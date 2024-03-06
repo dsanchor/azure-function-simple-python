@@ -56,7 +56,15 @@ az functionapp create --resource-group $RG --consumption-plan-location $LOCATION
 cd $CODE_LOCATION
 ```
 
-- Publish the function app to Azure
+Two options:
+
+- Publish the function app to Azure with **func** cli:
+
+```bash
+func azure functionapp publish $FUNCAPP
+```
+
+- Publish the function using the **az** cli:
 
 ```bash
 zip publish.zip -r function_app.py host.json
