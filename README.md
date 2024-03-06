@@ -15,13 +15,6 @@ SA=<storage-account-name> # Ex: testfunction1123sa
 FUNCAPP=<func-app-name> #Ex: test-function-1123
 CODE_LOCATION=<cloned-code-location>
 ```
-
-RG=test-function-py-rg
-LOCATION=francecentral
-SA=testfunctionpy0603sa
-FUNCAPP=test-function-py0603
-CODE_LOCATION=/home/dsanchor/projects/Telefónica/azure-function-simple-python
-
 ## Deploy to Azure
 
 ### Login to Azure
