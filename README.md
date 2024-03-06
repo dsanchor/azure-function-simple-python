@@ -15,13 +15,6 @@ SA=<storage-account-name> # Ex: testfunction1123sa
 FUNCAPP=<func-app-name> #Ex: test-function-1123
 CODE_LOCATION=<cloned-code-location>
 ```
-
-RG=test-function-py-rg
-LOCATION=francecentral
-SA=testfunctionpy0603sa
-FUNCAPP=test-function-py0603
-CODE_LOCATION=/home/dsanchor/projects/Telefónica/azure-function-simple-python
-
 ## Deploy to Azure
 
 ### Login to Azure
@@ -48,7 +41,7 @@ az storage account create --name $SA --location $LOCATION --resource-group $RG -
 az functionapp create --resource-group $RG --consumption-plan-location $LOCATION --runtime python --runtime-version 3.8 --functions-version 4 --name $FUNCAPP --os-type linux --storage-account $SA
 ```
 
-### Build function and publish to Azure
+### Publish function to Azure
 
 - Navigate to the function app directory
 
